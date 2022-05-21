@@ -3,9 +3,9 @@ apply from: "config.gradle"
 buildscript {
     ext.kotlin_version = "1.4.31"
     repositories {
-//        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
 //        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
-        google()
+//        google()
         mavenCentral()
         jcenter()
 
