@@ -1,0 +1,196 @@
+ext {
+    basic = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 24,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.4.2.3"
+    ]
+    ver = [
+            gradle_version   : "4.1.3",
+            kotlin_ver       : "1.4.31",
+            ktx_core_ver     : "1.2.0",
+            ktx_corout_ver   : "1.3.9",
+            appcompat_ver    : "1.2.0",
+            material_ver     : "1.3.0",
+            lifecycle_ver    : "2.2.0",
+            arouter_ver      : "1.5.2",
+            gson_ver         : "2.8.2",
+            rcvadapter_ver   : "3.0.4",
+            glide_ver        : "4.12.0",
+            rwidgethelper_ver: "0.0.9",
+            banner_ver       : "2.1.0",
+            xpopup_ver       : "2.2.24",
+            mmkv_ver         : "1.2.8",
+            rxjava_ver       : "3.0.13-RC4",
+            rxandroid_ver    : "3.0.0",
+            okhttp_ver       : "4.7.2",
+            retrofit_ver     : "2.9.0",
+            logger_ver       : "2.2.0",
+            calligraphy_ver  : "3.1.1",
+            viewpump_ver     : "2.0.3",
+            database_ver     : "3.2.3",
+            multidex_ver     : "1.0.3",
+            permission_ver   : "0.12",
+            firebase_ver     : "28.1.0",
+            crash_ver        : "2.3.0",
+            zxing_ver        : "3.4.1",
+            socket_ver       : "4.2.3",
+            fastjson_ver     : "1.2.76",
+            jsch_ver         : "0.1.55",
+            common_base_ver  : "1.0.41"
+    ]
+    support = [
+            kotlin              : "org.jetbrains.kotlin:kotlin-stdlib:$ver.kotlin_ver",
+            ktx_core            : "androidx.core:core-ktx:$ver.ktx_core_ver",
+            ktx_corout          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$ver.ktx_corout_ver",
+            ktx_reflect         : "org.jetbrains.kotlin:kotlin-reflect:$ver.kotlin_ver",
+            appcompat           : "androidx.appcompat:appcompat:$ver.appcompat_ver",
+            material            : "com.google.android.material:material:$ver.material_ver",
+            lifecycle_runtime   : "androidx.lifecycle:lifecycle-runtime-ktx:$ver.lifecycle_ver",
+            lifecycle_livedata  : "androidx.lifecycle:lifecycle-livedata-ktx:$ver.lifecycle_ver",
+            lifecycle_viewmodel : "androidx.lifecycle:lifecycle-viewmodel-ktx:$ver.lifecycle_ver",
+            lifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:$ver.lifecycle_ver",
+            lifecycle_java8     : "androidx.lifecycle:lifecycle-common-java8:$ver.lifecycle_ver",
+            lifecycle_service   : "androidx.lifecycle:lifecycle-service:$ver.lifecycle_ver",
+            lifecycle_process   : "androidx.lifecycle:lifecycle-process:$ver.lifecycle_ver",
+            multidex            : "com.android.support:multidex:$ver.multidex_ver",
+    ]
+    libs = [
+            arouter                      : "com.alibaba:arouter-api:$ver.arouter_ver",
+            arouter_compiler             : "com.alibaba:arouter-compiler:$ver.arouter_ver",
+            gson                         : "com.google.code.gson:gson:$ver.gson_ver",
+            rcvadapter                   : "com.github.CymChad:BaseRecyclerViewAdapterHelper:$ver.rcvadapter_ver",
+            glide                        : "com.github.bumptech.glide:glide:$ver.glide_ver",
+            glide_okhttp                 : "com.github.bumptech.glide:okhttp3-integration:$ver.glide_ver",
+            glide_compiler               : "com.github.bumptech.glide:compiler:$ver.glide_ver",
+            rwidgethelper                : "com.ruffian.library:RWidgetHelper-AndroidX:$ver.rwidgethelper_ver",
+            banner                       : "com.youth.banner:banner:$ver.banner_ver",
+            xpopup                       : "com.github.li-xiaojun:XPopup:$ver.xpopup_ver",
+            mmkv                         : "com.tencent:mmkv-static:$ver.mmkv_ver",
+            rxjava                       : "io.reactivex.rxjava3:rxjava:$ver.rxjava_ver",
+            rxandroid                    : "io.reactivex.rxjava3:rxandroid:$ver.rxandroid_ver",
+            okhttp                       : "com.squareup.okhttp3:okhttp:$ver.okhttp_ver",
+            retrofit                     : "com.squareup.retrofit2:retrofit:$ver.retrofit_ver",
+            converter_gson               : "com.squareup.retrofit2:converter-gson:$ver.retrofit_ver",
+            adapter_rxjava               : "com.squareup.retrofit2:adapter-rxjava3:$ver.retrofit_ver",
+            logging_interceptor          : "com.squareup.okhttp3:logging-interceptor:$ver.okhttp_ver",
+            logger                       : "com.orhanobut:logger:$ver.logger_ver",
+            calligraphy                  : "io.github.inflationx:calligraphy3:$ver.calligraphy_ver",
+            viewpump                     : "io.github.inflationx:viewpump:$ver.viewpump_ver",
+            database                     : "org.litepal.guolindev:core:$ver.database_ver",
+            permission                   : "com.github.tbruyelle:rxpermissions:$ver.permission_ver",
+            crash_collect                : "cat.ereza:customactivityoncrash:$ver.crash_ver",
+            zxing                        : "com.google.zxing:core:$ver.zxing_ver",
+            socket                       : "com.tonystark.android:socket:$ver.socket_ver",
+            fastjson                     : "com.alibaba:fastjson:$ver.fastjson_ver",
+            jsch                         : "com.jcraft:jsch:$ver.jsch_ver",
+            //stm common library
+            "common_base"                : "com.michaels.app-library:base:$ver.common_base_ver",
+
+            // firebase
+            "firebase_bom"               : 'com.google.firebase:firebase-bom:29.0.3',
+
+            //fcm
+            "firebase_analytics"         : 'com.google.firebase:firebase-analytics',
+            "firebase_crashlytics"       : 'com.google.firebase:firebase-crashlytics',
+            "firebase_crashlytics_ndk"   : 'com.google.firebase:firebase-crashlytics-ndk',
+            "firebase_crashlytics_gradle": 'com.google.firebase:firebase-crashlytics-gradle:2.7.0',
+            "firebase_storage"           : 'com.google.firebase:firebase-storage-ktx',
+//            "firebase_storage-ktx"       : 'com.google.firebase:firebase-storage-ktx',
+            "swipeRecyclerView"          : 'com.yanzhenjie.recyclerview:x:1.3.2'
+    ]
+    host_dev = [
+            cpm_host     : "\"https://cpm.dev.platform.michaels.com\"",
+            fin_host     : "\"https://fin.dev.platform.michaels.com\"",
+            map_host     : "\"https://map.dev.platform.michaels.com\"",
+            moh_host     : "\"https://moh.dev.platform.michaels.com\"",
+            checkout_host: "\"https://checkout.dev.platform.michaels.com\"",
+            inv_host     : "\"https://inv.dev.platform.michaels.com\"",
+            dh_host      : "\"https://testapi.michaels.com\"",
+    ]
+    host_tst = [
+            cpm_host     : "\"https://cpm.tst02.platform.michaels.com\"",
+            fin_host     : "\"https://fin.tst02.platform.michaels.com\"",
+            map_host     : "\"https://map.tst02.platform.michaels.com\"",
+            moh_host     : "\"https://moh.tst02.platform.michaels.com\"",
+            checkout_host: "\"https://checkout.tst02.platform.michaels.com\"",
+            inv_host     : "\"https://inv.tst02.platform.michaels.com\"",
+            dh_host      : "\"https://testapi.michaels.com\"",
+    ]
+    host_tst03 = [
+            cpm_host     : "\"https://cpm.tst03.platform.michaels.com\"",
+            fin_host     : "\"https://fin.tst03.platform.michaels.com\"",
+            map_host     : "\"https://map.tst03.platform.michaels.com\"",
+            moh_host     : "\"https://moh.tst03.platform.michaels.com\"",
+            checkout_host: "\"https://checkout.tst03.platform.michaels.com\"",
+            inv_host     : "\"https://inv.tst03.platform.michaels.com\"",
+            dh_host      : "\"https://testapi.michaels.com\"",
+    ]
+    host_stage = [
+            cpm_host     : "\"https://sc.stg.platform.michaels.com/api/cpm/\"",
+            fin_host     : "\"https://sc.stg.platform.michaels.com/api/fin/\"",
+            map_host     : "\"https://sc.stg.platform.michaels.com/api/map/\"",
+            moh_host     : "\"https://sc.stg.platform.michaels.com/api/moh/\"",
+            checkout_host: "\"https://sc.stg.platform.michaels.com/api/sco/\"",
+            inv_host     : "\"https://sc.stg.platform.michaels.com/api/inv/\"",
+            dh_host      : "\"https://testapi.michaels.com\"",
+    ]
+    host_release = [
+            cpm_host     : "\"https://sc.michaels.com/api/cpm/\"",
+            fin_host     : "\"https://sc.michaels.com/api/fin/\"",
+            map_host     : "\"https://sc.michaels.com/api/map/\"",
+            moh_host     : "\"https://sc.michaels.com/api/moh/\"",
+            checkout_host: "\"https://sc.michaels.com/api/sco/\"",
+            inv_host     : "\"https://sc.michaels.com/api/inv/\"",
+            dh_host      : "\"https://testapi.michaels.com\"",
+    ]
+    firebase_host = [
+            text02 : "\"https://storage.googleapis.com/mkp-tst02-uat.appspot.com\"",
+            text03 : "\"https://storage.googleapis.com/mkp-pci-e2e.appspot.com\"",
+            dev    : "\"https://storage.googleapis.com/mkp-dev-np1.appspot.com\"",
+            stage  : "\"https://storage.googleapis.com/mkp-selfcheckout-stage.appspot.com\"",
+            release: "\"https://storage.googleapis.com/mikvpc-prod-service-sc.appspot.com\""
+    ]
+
+    firebase_upload_path = [
+            tst02  : "\"gs://mkp-tst02-uat.appspot.com\"",
+            tst03  : "\"gs://mkp-pci-e2e.appspot.com\"",
+            dev    : "\"gs://mkp-dev-np1.appspot.com\"",
+            stage  : "\"gs://mkp-selfcheckout-stage.appspot.com\"",
+            release: "\"gs://mikvpc-prod-service-sc.appspot.com\""
+    ]
+    //for product
+    firebase_sync_product_path = [
+            tst02  : "\"gs://ifr-product-cache-tst03\"",
+            tst03  : "\"gs://ifr-product-cache-tst03\"",
+            dev    : "\"gs://ifr-product-cache-tst03\"",
+            stage  : "\"gs://ifr-product-cache-sc-stg\"",
+            release: "\"gs://ifr-product-cache-sc-prod\""
+    ]
+    //for price
+    firebase_sync_price_path = [
+            tst02  : "\"gs://inv-api-tst03\"",
+            tst03  : "\"gs://inv-api-tst03\"",
+            dev    : "\"gs://inv-api-tst03\"",
+            stage  : "\"gs://inv-api-sc-stg\"",
+            release: "\"gs://inv-api-sc-prod\""
+    ]
+    //for promotion
+    firebase_sync_promotion_path = [
+            tst02  : "\"gs://mcu-mpe-tst03\"",
+            tst03  : "\"gs://mcu-mpe-tst03\"",
+            dev    : "\"gs://mcu-mpe-tst03\"",
+            stage  : "\"gs://mcu-mpe-sc-stg\"",
+            release: "\"gs://mcu-mpe-sc-prod\""
+    ]
+    //for tax table
+    firebase_tax_table_path = [
+            tst02  : "\"gs://mcu-mpe-tst03\"",
+            tst03  : "\"gs://mcu-mpe-tst03\"",
+            dev    : "\"gs://mcu-mpe-tst03\"",
+            stage  : "\"gs://sco-tax-table-sc-stg\"",
+            release: "\"gs://sco-tax-table-sc-prod\""
+    ]
+}
